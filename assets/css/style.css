@@ -1,0 +1,22 @@
+h1 {
+	text-align:center;
+}
+table{
+	font-family: opensans-bold;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 5px;
+	background:#FBE2C6;
+	color:#656665;
+	border: 3px solid #FABE7A;
+}
+th{
+	font-size: 15px;
+	padding: 10px;
+}
+td{
+	text-align: center;
+	background:#ffffff;
+	padding: 10px;
+}
+
