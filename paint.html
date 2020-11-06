@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+      <link rel="stylesheet" href="assets/css/stl.css">
+</head>
+<body>
+<header class="header"><p><img src="public/images/disn12.png"></p></header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Disney Cartoons</h1>
+		   <p>
+           <script src="js/paint.js"></script>
+		   <div class="Toolbar">
+         Choose color<br>
+        <img id="pinkPen" src="images/1.png" alt="Pink" onclick="changeColor('rgb(255,20,147)', this)">
+        <img id="yellowPen" src="images/2.jpg" alt="Yellow" onclick="changeColor('rgb(255,255,0)', this)"> 
+        <img id="orangePen" src="images/3.jpg" alt="Orange" onclick="changeColor('rgb(255,140,0)', this)">
+</div>
+<div class="Toolbar">
+        Thickness<br>
+        <img src="images/4.jpg" alt="Thick" onclick="changeThickness(1, this)">
+        <img src="images/5.jpg" alt="Middle" onclick="changeThickness(5, this)"> 
+        <img src="images/6.jpg" alt="Bold" onclick="changeThickness(10, this)">
+</div>
+<div class="CanvasContainer">
+        <canvas id="draw" width="490" height="220"></canvas>
+</div>
+<div class="Toolbar">
+        - Операции-<br>
+        <button onclick="saveCanvas()">Save</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <div id="savedCopyContainer">
+           <img id="savedImageCopy"><br>
+           Right-click
+        </div>
+</div>
+		   </p>
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Left heading</h3>
+       <ul>
+		   <li><a href="table.html">Table</a></li>
+           <li><a href="contact.html">Contacts</a></li>
+       </ul>
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="about.html">Text</a></li>
+           <li><a href="media.html">Media</a></li>
+		   <li><a href="slider.html">Slider</a></li>
+		   <li><a href="paint.html">Paint</a></li>
+       </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"><p><img src="public/images/disn12.png"></p></footer>
+</div>
+</body>
+</html>
